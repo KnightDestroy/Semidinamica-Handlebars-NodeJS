@@ -27,6 +27,7 @@
     "fresh": "^0.5.2",
     "function-bind": "^1.1.1",
     "get-intrinsic": "^1.2.1",
+    "handlebars": "^4.7.8",
     "has": "^1.0.3",
     "has-proto": "^1.0.1",
     "has-symbols": "^1.0.3",
