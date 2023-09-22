@@ -4,6 +4,10 @@ const app = express();
 require('dotenv').config();
 const port = process.env.PORT;
 
+// importar el paquete del handlerbars
+app.set('view engine', 'html');
+var hbs = require('hbs');
+
 //Servir el contenido public
 app.use(express.static('public'));
 
@@ -13,6 +17,10 @@ app.listen(port,() => {
 
 // mostrar contenido de la carpeta public
 app.use(express.static('public'));
+
+// llamar el paquete handlebars
+hbs.registerPartials(__dirname + '/view/partials')
+
 
 // consultar las páginas en el webserver se utiliza el get, una función de flecha
 
